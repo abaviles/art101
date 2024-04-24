@@ -9,12 +9,19 @@ body {
 
 /* we can have rules apply to multiple elements at the same time with commas */
 h1,h2,h3 {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family:'Calibri', 'Trebuchet MS', sans-serif;
 }
 
 /* and we can have rules that overlap other rules, both take effect */
 h1 {
-  letter-spacing: 5px;
+  letter-spacing: 0px;
+  word-spacing: 5px;
+  font-size: 300%;
+  color: bisque;
+}
+
+h2 {
+  letter-spacing: 0px;
   word-spacing: 5px;
   font-size: 200%;
 }
@@ -23,14 +30,14 @@ h1 {
 #content {
   margin: 10px;
   padding: 10px;
-  border: solid 1px #ffcc84;
-  background-color: #ffc862;
+  border: solid 1px hwb(25 26% 23%);
+  background-color: #bb8049;
 }
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 .minor-section {
   padding: 10px;
   margin-bottom: 10px;
-  border: solid 3px #4b1d1d;
-  background-color: #ffe1a4;
+  border: solid 3px #c77a2d;
+  background-color: #cd9a71;
 }
